@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/97ba5b94ca.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="flex min-h-screen bg-white">
+
+
+  <!-- Sidebar -->
+  <aside class="w-64 bg-sky-50 p-4 grid grid-col">
+    <div>      <img src="img/avatar.jpg" alt="imagem do cliente" class="w-24 h-24 rounded-full mx-auto">
+
+      <h1 class="text-center text-lg font-bold mt-2">Gadiel Machado</h1>
+      <h2 class="text-center text-sm text-gray-500">Designer</h2>
+
+      <div class="mt-6 pt-2 flex flex-col gap-2">
+        <button class="text-left px-3 py-2 hover:bg-gray-100 rounded-md font-bold"><i class="fa-solid fa-grip mr-4"></i>Dashboard</button>
+        <button class="text-left px-3 py-2 hover:bg-gray-100 rounded-md font-bold"><i class="fa-solid fa-wallet mr-4"></i>Wallet</button>
+        <button class="text-left px-3 py-2 hover:bg-gray-100 rounded-md font-bold"><i class="fa-solid fa-layer-group mr-4"></i>Transactions</button>
+        <button class="text-left px-3 py-2 hover:bg-gray-100 rounded-md font-bold"><i class="fa-solid fa-file-lines mr-4"></i>Revenue analytics</button>
+        <button class="text-left px-3 py-2 hover:bg-gray-100 rounded-md font-bold"><i class="fa-solid fa-magnifying-glass mr-4"></i>Search</button>
+      </div>
+    </div>
+
+    <div class="mt-1 border-t border-gray-800 pt-4 grid grid-col gap-2">
+      <p class="cursor-pointer hover:underline font-bold"><i class="fa-solid fa-gear mr-4"></i>Setting</p>
+      <p class="cursor-pointer hover:underline font-bold"><i class="fa-solid fa-question mr-4"></i>Help</p>
+      <p class="cursor-pointer hover:underline font-bold"><i class="fa-solid fa-right-from-bracket mr-4"></i>Log Out</p>
+    </div>
+  </aside>
+
+  <!-- Conteúdo -->
+  <div class="flex-1 grid grid-col">
+
+    <!--barra do topo -->
+    <header class="flex items-center justify-between bg-white p-2 ml-3">
+      <input type="text" name="input" value="Search" class="border rounded-full px-3 py-2 w-1/3 bg-sky-50"><i class="fa-solid fa-magnifying-glass"></i>
+      <div class="flex items-center gap-4">
+        <i class="fa-solid fa-bell text-gray-600 cursor-pointer"></i>
+        <i class="fa-solid fa-comment text-gray-600 cursor-pointer"></i>
+      </div>
+    </header>
+
+    <!--texto principal-->
+     
+
+    <div class="ml-4 p-2 grid grid-cols-3 gap-4 flex-1">
+      
+      <h1 class=" col-span-3 text-2xl font-bold">Dashboard</h1>
+
+      <!--inicio box2 -->
+
+      <div id="dois" class="bg-sky-50 text-black rounded-xl p-6 h-48 w-84 col-start-1 row-start-2">
+
+          <div class="flex justify-between items-center">
+            <div class="text-sm font-semibold tracking-wider">Mastercard</div>
+          </div>
+
+        <div class="mt-6">
+            <p class="text-lg tracking-widest">4328 4388 4161 8183</p>
+        <div class="flex justify-between mt-2">
+      <div>
+        
+        <p class="font-semibold">Gadiel Machado</p>
+        <p class="text-xs">12/31</p>
+
+      </div>
+        <div>
+            <i class="fa-brands fa-cc-mastercard"></i>
+        </div>
+        </div>
+        </div>
+      </div>
+      <!--fim box 2 -->
+
+        <!--inicio Wallet-->
+
+         <div id="doisB" class="bg-sky-50 rounded-xl p-6 col-start-2 row-start-2">
+         <h2 class="text-lg font-bold text-gray-500 mb-4">Wallet</h2>
+  
+         <!-- Saldo principal -->
+             <div class="mb-6">
+                 <p class="text-2xl font-bold text-gray-800">$ 4.523,98</p>
+             </div>
+
+         <!--fim Wallet-->
+
+            <!-- Totais -->
+            <div class="flex justify-between text-center">
+                <div class="flex-1">
+                <p class="text-green-600 font-semibold">$ 3030,98</p>
+                <p class="text-sm text-gray-500"><i class="fa-solid fa-arrow-trend-up"></i>Income</p>
+                </div>
+                <div class="flex-1">
+                <p class="text-red-600 font-semibold">$ 223,98</p>
+                <p class="text-sm text-gray-500"><i class="fa-solid fa-arrow-trend-down"></i>Expenses</p>
+                </div>
+            </div>
+            </div>
+
+            <!--inicio box3-->
+
+            <div id="tres" class=" bg-sky-50 rounded-xl p-4 col-start-2  row-start-3">três</div>
+
+      
+            <!--fim do box3 -->
+
+            <!-- início do box4 -->
+            
+            <div id="quatro" class="bg-sky-50 rounded-xl p-4 col-start-1 row-start-3 row-span-2">
+
+                <h2 class="text-lg font-bold text-gray-700 mb-4">Transactions</h2>
+
+                    <ul class="space-y-3">
+                        <li class="flex justify-between items-center">
+                        <div>
+                            <p class="text-gray-800 font-medium">Saida</p>
+                            <p class="text-xs text-gray-500">12 Set 2025</p>
+                        </div>
+                        <div class="text-red-600 font-semibold">- R$ 250,00</div>
+                        </li>
+                        <li class="flex justify-between items-center">
+                        <div>
+                            <p class="text-gray-800 font-medium">Entrada</p>
+                            <p class="text-xs text-gray-500">10 Set 2025</p>
+                        </div>
+                        <div class="text-green-600 font-semibold">+ R$ 5.000,00</div>
+                        </li>
+                        <li class="flex justify-between items-center">
+                        <div>
+                            <p class="text-gray-800 font-medium">Saida</p>
+                            <p class="text-xs text-gray-500">08 Set 2025</p>
+                        </div>
+                        <div class="text-red-600 font-semibold">- R$ 39,90</div>
+                        </li>
+                        <li class="flex justify-between items-center">
+                        <div>
+                            <p class="text-gray-800 font-medium">Entrada</p>
+                            <p class="text-xs text-gray-500">05 Set 2025</p>
+                        </div>
+                        <div class="text-green-600 font-semibold">+ R$ 1.200,00</div>
+                        </li>
+                        <li class="flex justify-between items-center">
+                        <div>
+                            <p class="text-gray-800 font-medium">Saída</p>
+                            <p class="text-xs text-gray-500">02 Set 2025</p>
+                        </div>
+                        <div class="text-red-600 font-semibold">- R$ 180,00</div>
+                        </li>
+                        <li class="flex justify-between items-center">
+                        <div>
+                            <p class="text-gray-800 font-medium">Entrada</p>
+                            <p class="text-xs text-gray-500">01 Set 2025</p>
+                        </div>
+                        <div class="text-red-600 font-semibold">- R$ 300,00</div>
+                        </li>
+                        <li class="flex justify-between items-center">
+                        <div>
+                            <p class="text-gray-800 font-medium">Saída</p>
+                            <p class="text-xs text-gray-500">01 Set 2025</p>
+                        </div>
+                        <div class="text-red-600 font-semibold">- R$ 300,00</div>
+                        </li>
+                    </ul>
+                    </div>
+
+            <!-- fim do box4 -->
+
+
+            <!--inicio box 5-->
+            <div id="cinco" class="bg-sky-50 rounded-xl p-4 col-start-2 row-start-4">cinco</div>
+
+            <!--fim box 5-->
+
+            <!--inicio box 6-->
+            <div id="seis" class="bg-sky-50 rounded-xl p-4 col-start-3 row-start-2 row-span-3">
+              <div id="progress-conteudo" class="bg-white h-40 my-1 p-2 rounded-xl">
+                <section>
+                  <h2 class="font-bold text-2xl ml-4 mb-2">Payable Accounts</h2>
+                  <p class="ml-4 text-gray-500">Keep your accounts up to date</p>
+                  <p class="ml-4 text-gray-500">to avoid issues</p>
+                  <br>
+
+                  <h2 class="ml-2">14 out of 16</h2>
+                  <progress class="ml-2 rounded-full " id=p max=100 value="80"></progress>
+                  
+                </section>
+
+                <section>
+                  <h2 class="font-bold text-2xl mt-4 mb-2">Receipts</h2>
+
+                  <div class=" grid grid-col-2">
+                
+                  <i class="fa-solid fa-arrow-trend-up bg-white col-start-1 "></i>
+                    <div class="col-start-2">
+                      <p class="text-gray-800 font-semibold">$ 5.000,00</p>
+                      <p class="text-sm text-gray-500">Salary</p>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-trend-up bg-white col-start-1 row-start-2 "></i>
+                    <div class="col-start-2 row-start-2">
+                      <p class="text-gray-800 font-semibold">$ 593,00</p>
+                      <p class="text-sm text-gray-500">Service</p>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-trend-up bg-white col-start-1 row-start-3 "></i>
+                    <div class="col-start-2 row-start-3 mb-6">
+                      <p class="text-gray-800 font-semibold">$ 3.030,98</p>
+                      <p class="text-sm text-gray-500">Rent or Mortgage</p>
+                    </div>
+                    
+                    <h2 class="font-bold text-2xl mt-6 mb-4 pt-4 border-t border-gray-800 col-span-2">Receipts</h2>
+
+                  </div>
+
+                    <div class=" grid grid-col-2 p-2 mt-6">
+                        
+                        <i class="fa-regular fa-file-lines bg-white col-start-1"></i>
+                        <div class="col-start-2">
+                          <p class="text-gray-800 font-semibold">$ 202,98</p>
+                          <p class="text-sm text-gray-500">Electricity Bill</p>
+                        </div>
+
+                        <i class="fa-regular fa-file-lines bg-white col-start-1 row-start-2"></i>
+                        <div class="col-start-2 row-start-2">
+                          <p class="text-gray-800 font-semibold">$ 3.030,98</p>
+                          <p class="text-sm text-gray-500">Rent or Mortgage</p>
+                        </div>                    
+
+                </div>
+
+
+                </section>
+              <div>
+            </div>
+            <!--fim box 6-->
+
+
+    </div>
+
+  </div>
+
+</body>
+</html>
