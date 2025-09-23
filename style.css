@@ -15,3 +15,10 @@
   content: "$ 4.523,00";
   
 }
+
+#busca {
+  background-image:url(/img/magnifying-glass.svg);
+  background-repeat: no-repeat;
+}
+
+
